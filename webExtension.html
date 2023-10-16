@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<body style ="background-color: rgb(219, 255, 244);">
+    <center>
+
+
+        <head>
+            <title> Temperature Tracker </title>
+
+            <link rel ="stylesheet" href = "styles.css">
+
+            <script type="text/javascript" src="getData.js"></script>
+        </head>
+
+        <body>
+            <h1>Temperature Data</h1>
+            
+
+
+            <div>
+                <h2>Current Weather</h2>
+                    <form if ="form" onsubmit="return false;" >
+                        <label for="city">Enter a Location:</label>
+                        <input type="text" id="city">
+                        <button type="submit" onclick="getWeather()"> generate</button>
+                     </form>
+                <!-- <p>Temperature: <span id="temperature"></span>°C</p>
+                    (Add more elements for other weather data as needed)
+              </div>
+              <button onclick="getWeather()">Get Weather</button>-->
+
+              <!-- table need to add data to it, and fix format-->
+              </div>
+              <p><table>
+                <tr>
+                    <tb> TEMPERATURE DATA FROM </tb>
+                    <th>Today</th>
+                    <th>5 Years</th>
+                    <th>10 Years</th>
+                    <th>20 Years</th>
+                </tr>
+                <tr>
+                    <td><span id="temperature"></span>℉</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+            </table></p>
+
+
+              
+
+        </body>
+
+    </center>
+
+</html>

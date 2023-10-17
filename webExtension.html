@@ -5,54 +5,50 @@
     <center>
 
 
-        <head>
+    <head>
             <title> Temperature Tracker </title>
 
             <link rel ="stylesheet" href = "styles.css">
 
             <script type="text/javascript" src="getData.js"></script>
-        </head>
+    </head>
 
         <body>
+
             <h1>Temperature Data</h1>
             
-
-
             <div>
                 <h2>Current Weather</h2>
-                    <form if ="form" onsubmit="return false;" >
+                    <form id ="form" onsubmit="return false;">
                         <label for="city">Enter a Location:</label>
-                        <input type="text" id="city">
-                        <button type="submit" onclick="getWeather()"> generate</button>
-                     </form>
-                <!-- <p>Temperature: <span id="temperature"></span>°C</p>
-                    (Add more elements for other weather data as needed)
-              </div>
-              <button onclick="getWeather()">Get Weather</button>-->
-
-              <!-- table need to add data to it, and fix format-->
-              </div>
-              <p><table>
+                        <input type="text" id="city" name ="city">
+                        <button type="submit" onclick="getWeather()"> Generate</button>
+                    </form>
+            </div>
+        <p>
+            <table>
+                
+                    <caption> TEMPERATURE DATA FROM </caption> 
                 <tr>
-                    <tb> TEMPERATURE DATA FROM </tb>
                     <th>Today</th>
+                    <td><span id="temperature"></span>℉</tb>
+                </tr>
+            </table>
+                <!--<tr>
                     <th>5 Years</th>
-                    <th>10 Years</th>
-                    <th>20 Years</th>
+                    <td><span id="temp-5-yrs"></span>℉</td>
                 </tr>
                 <tr>
-                    <td><span id="temperature"></span>℉</td>
-                    <td>Data</td>
-                    <td>Data</td>
-                    <td>Data</td>
+                    <th>10 Years</th>
+                    <td><span id="temp-10-yrs"></span>℉</td> 
                 </tr>
-            </table></p>
-
-
-              
-
+                 <tr> 
+                    <th>20 Years</th>
+                    <td><span id="temp-20-yrs"></span>℉</td>
+                </tr>
+            </table>-->
+        </p>
+             
         </body>
-
-    </center>
-
+    </center>  
 </html>

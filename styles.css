@@ -2,5 +2,15 @@ p {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 
 h2 {font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: rgb(60, 72, 206)}
 
+img{
+    border: 20px solid hsl(323, 100%, 92%)
+}
 
-  
+body{background-color: rgb(223, 255, 221)}
+
+div {
+    width: 300px;
+    content: 15px solid hsl(323, 100%, 92%);
+    padding: 50px;
+    margin: 20px;
+  }

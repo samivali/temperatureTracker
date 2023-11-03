@@ -2,8 +2,20 @@
 
 <html>
 <center>
+ <div id="colored-box">
 
+    
     <head>
+       
+
+        <style>
+            body {
+              background: url(./images/background.jpg);
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
             <title> Temperature Tracker </title>
 
             <link rel ="stylesheet" href = "styles.css">
@@ -13,17 +25,15 @@
 
         <body>
 
-            <h1>Temperature Data</h1>
-            
-            <div>
-                <h2>Current Weather</h2>
+            <h1 style="font-size:35px;">Temperature Data</h1>
+            <div style="font-size:35px;">
                     <form id ="form" onsubmit="return false;">
                         <label for="city">Enter a Location:</label>
                         <input type="text" id="city" name ="city">
                         <button type="submit" onclick="getWeather()"> Generate</button>
                     </form>
             </div>
-            <table>
+            <table style="font-size:20px;">
                 
                     <caption> TEMPERATURE DATA FROM </caption> 
                 <tr>
@@ -31,19 +41,20 @@
                     <td><span id="temperature"></span>℉</tb>
                 </tr>
                 <tr>
-                    <th>5 Years</th>
+                    <th>5 Years Ago</th>
                     <td><span id="temp-5-yrs"></span>℉</td>
                 </tr>
                 <tr>
-                    <th>10 Years</th>
+                    <th>10 Years Ago</th>
                     <td><span id="temp-10-yrs"></span>℉</td> 
                 </tr>
                  <tr> 
-                    <th>20 Years</th>
+                    <th>20 Years Ago</th>
                     <td><span id="temp-20-yrs"></span>℉</td>
                 </tr>
             </table>
+        </div>
+    </section>
      </center>        
-        </body>
 
 </html>
